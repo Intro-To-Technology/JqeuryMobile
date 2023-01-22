@@ -8,11 +8,50 @@
         <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-    
-
     </head>
     <body>
         <!-- Contact List -->
+        <section data-role="page" id="contactList">
+            <!-- Header -->
+            <header data-role="header">
+                <a href="#newContact" data-icon="plus">Add</a>
+                <h1>Contact List</h1>
+            </header>
+            <!-- Content -->
+            <article data-role="content">
+                <!-- Search & List View -->
+                <ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true"  data-autodividers="true" data-filter="true" >
+                    <li><a href="#contactInfo">
+                        <img src="assets/img/male.png">
+                        <h2>Ahmed Ali</h2>
+                        </a>
+                        <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"  data-icon="phone"></a>
+                    </li>
+                    <li><a href="#contactInfo">
+                        <img src="assets/img/female.png">
+                        <h2>Asmaa Mohamed</h2>
+                        </a>
+                        <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"  data-icon="phone"></a>
+                    </li>
+                    <li><a href="#contactInfo">
+                        <img src="assets/img/male.png">
+                        <h2>Khaled Abbas</h2>
+                        </a>
+                        <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop" data-icon="phone"></a>
+                    </li>
+                    <li><a href="#contactInfo">
+                        <img src="assets/img/female.png">
+                        <h2>Merna Mohamed</h2>
+                        </a>
+                        <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"  data-icon="phone"></a>
+                    </li>
+                </ul>
+            
+            </article>
+            <!-- Fotter -->
+            <footer data-role="footer"><h1> Contact List </h1></footer>
+
+        </section>
 
 
 
