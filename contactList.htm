@@ -4,12 +4,65 @@
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-</head>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
 
 <body>
+    <!-- Contact List -->
+    <section data-role="page" id="contactList">
+        <!-- Header -->
+        <header data-role="header">
+            <a href="#newContact" data-icon="plus">Add</a>
+            <h1>Contact List</h1>
+        </header>
+        <!-- Content -->
+        <article data-role="content">
+            <!-- Search & List View -->
+            <ul data-role="listview" data-split-icon="gear" data-split-theme="d" data-inset="true"
+                data-autodividers="true" data-filter="true">
+                <li><a href="#contactInfo">
+                        <img src="assets/img/male.png">
+                        <h2>Ahmed Ali</h2>
+                    </a>
+                    <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"
+                        data-icon="phone"></a>
+                </li>
+                <li><a href="#contactInfo">
+                        <img src="assets/img/female.png">
+                        <h2>Asmaa Mohamed</h2>
+                    </a>
+                    <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"
+                        data-icon="phone"></a>
+                </li>
+                <li><a href="#contactInfo">
+                        <img src="assets/img/male.png">
+                        <h2>Khaled Abbas</h2>
+                    </a>
+                    <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"
+                        data-icon="phone"></a>
+                </li>
+                <li><a href="#contactInfo">
+                        <img src="assets/img/female.png">
+                        <h2>Merna Mohamed</h2>
+                    </a>
+                    <a href="tel:012" data-rel="popup" data-position-to="window" data-transition="pop"
+                        data-icon="phone"></a>
+                </li>
+            </ul>
+
+        </article>
+        <!-- Fotter -->
+        <footer data-role="footer">
+            <h1> Contact List </h1>
+        </footer>
+
+    </section>
+
     <!-- Contact List -->
 
 
@@ -21,25 +74,62 @@
             <h1>Person</h1>
         </header>
         <article data-role="content">
-            <img src="">
-            <a href="#deleteContact" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext"></a>
+            <img src="assets/img/male.png" style="width: 50%; height: 25%;"><br>
+            <a href="#deleteContact" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext" data-rel="dialog">
+                <section id="deleteContact" data-role="dialog">a
+                    <h3>Delete Contact</h3>
+                    <a href="" data-role="button">Cancel</a>
+                    <a href="" data-role="button">Delete</a>
+                </section>
+            </a>
             <a href="#newContact" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-notext"></a>
-            <a href="#" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext"></a>
+            <a href="tel:012" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext"></a>
 
-      
+
         </article>
         <footer data-role="footer">
             <h1>Contact List</h1>
         </footer>
+    </section>
+   
 
-        <section id="deleteContact" data-role="dialog">
-            <h3>Delete Contact</h3>
-            <a href="" data-role="button">Cancel</a>
-            <a href="" data-role="button">Delete</a>
-        </section>
+
+    <!-- Yosuef parts -->
+
+    <section data-role="page" id="newContact" data-add-back-btn="true">
+
+        <header data-role="header">
+            <a href="#contactList" data-role="button">Back</a>
+            <h3>New Contact</h3>
+        </header>
+        <article data-role="content">
+            <form>
+                <div><label for="text-basic">Name:</label><input type="text" name="nameInput" id="nameInput" value="">
+                </div>
+                <div><label>Phone:</label> <input type="number" name="numberInput" pattern="[+20][1-9]{9}"
+                        id="numberInput"></div>
+                <div><label>Email:</label> <input type="email" name="emailInput" id="emailInput"></div>
+                <div class="tst">
+                    <label for="slider-flip-m">Gender:</label>
+                    <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="tst" data-role="controlgroup" data-type="horizontal" data-mini="true">
+                    <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-plus ui-btn-b">Save</a>
+                    <a href="#"
+                        class="ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-delete ui-btn-b">Cancle</a>
+                </div>
+            </form>
+        </article>
+        <footer data-role="footer">
+            <h1>Contact List</h1>
+
+        </footer>
+
     </section>
 
-    <!-- New Contact -->
 
 
 </body>
