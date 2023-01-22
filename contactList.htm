@@ -1,27 +1,47 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        
-        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    </head>
-    <body>
-        <!-- Contact List -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
 
-
-
-
-        <!-- Contact Info -->
-
-        
-        
-        
-        <!-- New Contact -->
+<body>
+    <!-- Contact List -->
 
 
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.6.4.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
-    </body>
+
+
+    <!-- Contact Info -->
+    <section id="contactInfo" data-role="page" data-add-back-btn="true">
+        <header data-role="header">
+            <h1>Person</h1>
+        </header>
+        <article data-role="content">
+            <img src="">
+            <a href="#deleteContact" class="ui-btn ui-btn-inline ui-icon-delete ui-btn-icon-notext"></a>
+            <a href="#newContact" class="ui-btn ui-btn-inline ui-icon-edit ui-btn-icon-notext"></a>
+            <a href="#" class="ui-btn ui-btn-inline ui-icon-phone ui-btn-icon-notext"></a>
+
+      
+        </article>
+        <footer data-role="footer">
+            <h1>Contact List</h1>
+        </footer>
+
+        <section id="deleteContact" data-role="dialog">
+            <h3>Delete Contact</h3>
+            <a href="" data-role="button">Cancel</a>
+            <a href="" data-role="button">Delete</a>
+        </section>
+    </section>
+
+    <!-- New Contact -->
+
+
+</body>
+
 </html>
